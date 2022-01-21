@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Diagram example
+{% endblock %}
+
+{% block content %}
+
+<div role="figure" aria-labelledby="figure-1">
+    <img src="https://developer.service.hmrc.gov.uk/guides/vat-mtd-end-to-end-service-guide/documentation/figures/link-a-new-vat-client.svg"
+         alt="">
+    <p id="figure-1">Figure 1: Link to a new VAT client.</p>
+<p>
+  <a href="figures/link-a-new-vat-client.svg" target="blank">Open the link a new VAT client process diagram in a new tab</a>.
+</p>
+<ol class="govuk-list govuk-list--number">
+<li>Agent signs into agent services account</li>
+<li>Agent requests to ask a client to authorise them</li>
+<li>Agent gives client’s details including their VAT registration number (VRN) and VAT registration date</li>
+<li>Agent gets a unique link and sends it to their client in email</li>
+<li>Client receives email from agent and clicks on the link to begin the process</li>
+<li>Client logs in with Government Gateway account and completes identity checks</li>
+<li>Client confirms authorisation for agent to represent them</li>
+</ol>
+  </div>
+
+{% endblock %}
